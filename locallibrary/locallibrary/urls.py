@@ -30,6 +30,7 @@ urlpatterns += [
     path('catalog/', include('catalog.urls')),
 ]
 
+
 # Add URL maps to redirect the base URL to our application
 urlpatterns += [
     path('', RedirectView.as_view(url='catalog/', permanent=True)),
