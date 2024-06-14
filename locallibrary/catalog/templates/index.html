@@ -17,4 +17,7 @@
     <li><strong>Books contain 'the' word:</strong> {{ num_books_words }}</li>
     <li><strong>Genres:</strong> {{ num_genres }}</li>
  </ul>
+ <p>
+  You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.
+ </p>
 {% endblock %}
